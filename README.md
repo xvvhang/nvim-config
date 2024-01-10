@@ -4,8 +4,6 @@ A simple but powerful nvim config inspired by [LazyVim](https://lazyvim.org).
 
 See nvim/vim configs in [lua/configs.lua](https://github.com/xvvhang/nvim-config/blob/main/lua/configs.lua) and see configs for plugins listed below in [lua/plugins](https://github.com/xvvhang/nvim-config/tree/main/lua/plugins).
 
-[//]: # (TODO: For detail steps to config nvim from scratch, see []().)
-
 - Plugin Manager
 	- [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
 - UI Components
