@@ -2,6 +2,8 @@
 
 A simple but powerful nvim config inspired by [LazyVim](https://lazyvim.org).
 
+![see more screenshots in /assets](./assets/04.png)
+
 See nvim/vim configs in [lua/configs.lua](https://github.com/xvvhang/nvim-config/blob/main/lua/configs.lua) and see configs for plugins listed below in [lua/plugins](https://github.com/xvvhang/nvim-config/tree/main/lua/plugins).
 
 - Plugin Manager
