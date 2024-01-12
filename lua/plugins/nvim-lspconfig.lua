@@ -12,8 +12,8 @@ M.config = function()
     'jsonls',
     'tsserver',
     'lua_ls',
-    'vuels',
-    -- 'volar',
+    -- 'vuels',
+    'volar',
     'emmet_ls'
   }
 
