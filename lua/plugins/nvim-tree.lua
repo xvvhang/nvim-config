@@ -60,6 +60,12 @@ M.opts = {
     open_file = {
       quit_on_open = true,
     }
+  },
+  ui = {
+    confirm = {
+      remove = false,
+      trash = false
+    }
   }
 }
 
