@@ -14,7 +14,8 @@ M.config = function()
     'lua_ls',
     -- 'vuels',
     'volar',
-    'emmet_ls'
+    'emmet_ls',
+    'prismals'
   }
 
   local configs = {
