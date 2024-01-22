@@ -54,6 +54,7 @@ M.config = function()
 
   local window = require('lspconfig.ui.windows')
   window.default_options.border = 'rounded'
+  window.default_options.title = true
 end
 
 return M

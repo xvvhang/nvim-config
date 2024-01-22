@@ -55,10 +55,6 @@ M.opts = {
     },
     lualine_c = {
       {
-        'filesize',
-        color = { gui = 'italic' }
-      },
-      {
         'filename',
         file_status = true,
         path = 1,
@@ -87,11 +83,12 @@ M.opts = {
       }
     },
     lualine_z = {
-      { lsp_clients, icon = ' LSP:' },
-      { copilot_status, icon = ' Copilot:' }
+      { lsp_clients, icon = '  LSP:' },
+      { copilot_status, icon = '  Copilot:' }
     }
   },
-  extensions = { 'quickfix', 'lazy', 'nvim-tree' }
+  extensions = { 'quickfix', 'lazy', 'nvim-tree' },
+  theme = 'tokyonight'
 }
 
 return M
