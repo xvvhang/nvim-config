@@ -15,7 +15,8 @@ M.config = function()
     -- 'vuels',
     'volar',
     'emmet_ls',
-    'prismals'
+    'prismals',
+    'rust_analyzer'
   }
 
   local configs = {
