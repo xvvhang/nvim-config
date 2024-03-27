@@ -34,11 +34,11 @@ vim.opt.virtualedit = 'block'
 vim.opt.signcolumn = 'yes'
 
 vim.g.mapleader = ' '
-vim.keymap.set('n', '<leader>h', '<CMD>noh<CR>')
-vim.keymap.set('n', '<leader>w', '<CMD>w<CR>')
-vim.keymap.set('i', '<leader>w', '<ESC><CMD>w<CR>')
-vim.keymap.set('n', '<leader>c', '<C-w>c')
-vim.keymap.set('i', '<leader>c', '<ESC><C-w>c')
+vim.keymap.set('n', '<leader>hh', '<CMD>noh<CR>')
+vim.keymap.set('n', '<leader>ww', '<CMD>w<CR>')
+vim.keymap.set('i', '<leader>ww', '<ESC><CMD>w<CR>')
+vim.keymap.set('n', '<leader>cc', '<C-w>c')
+vim.keymap.set('i', '<leader>cc', '<ESC><C-w>c')
 vim.keymap.set('n', '<C-c>', '<CMD>qa!<CR>')
 vim.keymap.set('v', '<C-c>', '<CMD>qa!<CR>')
 vim.keymap.set('i', '<C-c>', '<CMD>qa!<CR>')

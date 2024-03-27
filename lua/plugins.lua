@@ -122,6 +122,19 @@ local plugins = {
     lazy = false,
     config = function() require('copilot').setup() end
   },
+  {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    branch = "canary",
+    dependencies = { "zbirenbaum/copilot.lua", "nvim-lua/plenary.nvim" },
+    cmd = {
+      'CopilotChat',
+      'CopilotChatOpen',
+      'CopilotChatToggle',
+    },
+    keys = require('plugins.copilot-chat').keys,
+    opts = require('plugins.copilot-chat').opts,
+    config = function(_, opts) require('plugins.copilot-chat').config(opts) end
+  },
   -- UTILS
   {
     'mrjones2014/smart-splits.nvim',
