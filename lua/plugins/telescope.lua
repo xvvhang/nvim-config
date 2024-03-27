@@ -15,11 +15,6 @@ local git_status = function()
   require('telescope.builtin').git_status()
 end
 
-local keymaps = function()
-  require('nvim-tree.api').tree.close()
-  require('telescope.builtin').keymaps()
-end
-
 M.keys = {
   { '<leader>f', find_files },
   { '<leader>j', live_grep },
