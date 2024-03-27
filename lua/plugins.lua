@@ -106,6 +106,18 @@ local plugins = {
     opts = require('plugins.gitsigns').opts
   },
   {
+    'kdheepak/lazygit.nvim',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    cmd = {
+      'LazyGit',
+      'LazyGitConfig',
+      'LazyGitCurrentFile',
+      'LazyGitFilter',
+      'LazyGitFilterCurrentFile',
+    },
+    keys = require('plugins.lazygit').keys,
+  },
+  {
     'zbirenbaum/copilot.lua',
     lazy = false,
     config = function() require('copilot').setup() end
