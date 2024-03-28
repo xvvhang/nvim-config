@@ -1,7 +1,7 @@
 local M = {}
 
 M.keys = {
-  { '<leader>p', '<CMD>BufferLinePick<CR>' },
+  { '<leader>t', '<CMD>BufferLinePick<CR>' },
   { '<leader>d', '<CMD>bdelete<CR>' },
   { '<leader>1', '<CMD>BufferLineGoToBuffer 1<CR>' },
   { '<leader>2', '<CMD>BufferLineGoToBuffer 2<CR>' },

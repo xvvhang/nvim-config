@@ -24,7 +24,7 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.foldlevel = 99
 vim.opt.foldmethod = 'indent'
-vim.opt.timeoutlen = 300
+vim.opt.timeoutlen = 200
 vim.opt.writebackup = false
 vim.opt.backup = false
 vim.opt.autowrite = false
@@ -34,11 +34,9 @@ vim.opt.virtualedit = 'block'
 vim.opt.signcolumn = 'yes'
 
 vim.g.mapleader = ' '
-vim.keymap.set('n', '<leader>hh', '<CMD>noh<CR>')
-vim.keymap.set('n', '<leader>ww', '<CMD>w<CR>')
-vim.keymap.set('i', '<leader>ww', '<ESC><CMD>w<CR>')
-vim.keymap.set('n', '<leader>cc', '<C-w>c')
-vim.keymap.set('i', '<leader>cc', '<ESC><C-w>c')
+vim.keymap.set('n', '<leader>nh', '<CMD>noh<CR>')
+vim.keymap.set('n', '<leader>w', '<CMD>w<CR>')
+vim.keymap.set('n', '<leader>c', '<C-w>c')
 vim.keymap.set('n', '<C-c>', '<CMD>qa!<CR>')
 vim.keymap.set('v', '<C-c>', '<CMD>qa!<CR>')
 vim.keymap.set('i', '<C-c>', '<CMD>qa!<CR>')
