@@ -23,6 +23,15 @@ M.keys = {
 M.opts = function()
   return {
     -- proxy = 'https://127.0.0.1:7890'
+    question_header = '**User**',
+    separator = '::',
+    show_help = false,
+    mappings = {
+      reset = {
+        normal ='<C-r>',
+        insert = '<C-r>'
+      }
+    }
   }
 end
 
