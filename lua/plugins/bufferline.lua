@@ -21,7 +21,15 @@ M.opts = {
     show_close_icon = false,
     always_show_bufferline = true,
     separator_style = { '', '' },
-    hover = { enable = false }
+    hover = { enable = false },
+    offsets = {
+      {
+        filetype = 'NvimTree',
+        text = 'Files',
+        text_align = 'center',
+        separator = true
+      }
+    }
   }
 }
 

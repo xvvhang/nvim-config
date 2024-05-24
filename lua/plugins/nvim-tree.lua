@@ -8,8 +8,9 @@ M.keys = {
 M.opts = {
   hijack_cursor = true,
   view = {
+    centralize_selection = true,
     float = {
-      enable = true,
+      enable = false,
       quit_on_focus_loss = false,
       open_win_config = function()
         local screen_w = vim.opt.columns:get()
@@ -55,6 +56,7 @@ M.opts = {
       }
     }
   },
+  update_focused_file = { enable = true },
   modified = { enable = true },
   actions = {
     open_file = {
