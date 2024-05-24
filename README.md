@@ -21,7 +21,7 @@ See nvim/vim configs in [lua/configs.lua](https://github.com/xvvhang/nvim-config
 	- [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 - Integrations
 	- [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-	- [zbirenbaum/copilot.lua](https://github.com/zbirenbaum/copilot.lua)
+    - [zbirenbaum/copilot.lua](https://github.com/zbirenbaum/copilot.lua)
 - Utils
 	- [mrjones2014/smart-splits.nvim](https://github.com/mrjones2014/smart-splits.nvim)
 	- [dstein64/vim-startuptime](https://github.com/dstein64/vim-startuptime)

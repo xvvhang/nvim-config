@@ -48,13 +48,13 @@ vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSig
 vim.diagnostic.config({
   float = {
     border = 'rounded',
-    title = ' Diagnostic ',
-    title_pos = 'center'
+    title = 'Diagnostic',
+    title_pos = 'left'
   }
 })
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
   vim.lsp.handlers.hover, {
     border = 'rounded',
-    title = ' Hover '
+    title = 'Hover'
   }
 )

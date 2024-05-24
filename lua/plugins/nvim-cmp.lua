@@ -23,7 +23,7 @@ M.opts = function()
       ['<CR>'] = cmp.mapping.confirm({ select = true }),
     },
     sources = cmp.config.sources({
-        { name = 'copilot' },
+      { name = 'copilot' },
         { name = 'nvim_lsp' },
         { name = 'vsnip' }
       },
@@ -35,7 +35,7 @@ M.opts = function()
         mode = 'symbol_text',
         preset = 'default',
         ellipsis_char = '...',
-        symbol_map = { Copilot = "" }
+        symbol_map = { Copilot = '' }
       })
     },
     sortting = {

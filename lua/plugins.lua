@@ -22,7 +22,7 @@ local plugins = {
       {
         'zbirenbaum/copilot.lua',
         config = function() require('copilot').setup() end
-      },
+      }
     },
     event = "VeryLazy",
     opts = require('plugins.lualine').opts
@@ -86,7 +86,7 @@ local plugins = {
       },
       {
         'zbirenbaum/copilot-cmp',
-        config = function() require('copilot_cmp').setup() end
+        config = function () require('copilot_cmp').setup() end
       }
     },
     event = { 'BufReadPost', 'BufWritePost', 'BufNewFile' },
@@ -98,6 +98,25 @@ local plugins = {
     dependencies = { 'JoosepAlviste/nvim-ts-context-commentstring' },
     event = { 'BufReadPost', 'BufWritePost', 'BufNewFile' },
     opts = require('plugins.comment').opts
+  },
+  {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+    config = function() require("copilot").setup() end,
+  },
+  {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    branch = "canary",
+    dependencies = { "zbirenbaum/copilot.lua", "nvim-lua/plenary.nvim" },
+    cmd = {
+      'CopilotChat',
+      'CopilotChatOpen',
+      'CopilotChatToggle',
+    },
+    keys = require('plugins.copilot-chat').keys,
+    opts = require('plugins.copilot-chat').opts,
+    config = function(_, opts) require('plugins.copilot-chat').config(opts) end
   },
   -- WORKFLOW
   {
@@ -116,24 +135,6 @@ local plugins = {
       'LazyGitFilterCurrentFile',
     },
     keys = require('plugins.lazygit').keys,
-  },
-  {
-    'zbirenbaum/copilot.lua',
-    lazy = false,
-    config = function() require('copilot').setup() end
-  },
-  {
-    "CopilotC-Nvim/CopilotChat.nvim",
-    branch = "canary",
-    dependencies = { "zbirenbaum/copilot.lua", "nvim-lua/plenary.nvim" },
-    cmd = {
-      'CopilotChat',
-      'CopilotChatOpen',
-      'CopilotChatToggle',
-    },
-    keys = require('plugins.copilot-chat').keys,
-    opts = require('plugins.copilot-chat').opts,
-    config = function(_, opts) require('plugins.copilot-chat').config(opts) end
   },
   -- UTILS
   {
@@ -168,7 +169,7 @@ local plugins = {
 local configs = {
   ui = {
     size = { width = 0.5 },
-    title = ' Lazy ',
+    title = 'Lazy',
     border = 'rounded',
   }
 }

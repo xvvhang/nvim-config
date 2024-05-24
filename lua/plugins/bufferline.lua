@@ -26,7 +26,7 @@ M.opts = {
       {
         filetype = 'NvimTree',
         text = 'Files',
-        text_align = 'center',
+        text_align = 'left',
         separator = true
       }
     }

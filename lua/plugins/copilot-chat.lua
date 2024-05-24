@@ -1,7 +1,6 @@
 local M = {}
 
 M.keys = {
-  { '<leader>kj', '<CMD>CopilotChatToggle' },
   { '<leader>kk', '<CMD>CopilotChatToggle<CR>' },
   { '<leader>ke', '<CMD>CopilotChatExplain<CR>', mode = 'v' },
   { '<leader>kt', '<CMD>CopilotChatTests<CR>', mode = 'v' },
@@ -20,10 +19,17 @@ M.keys = {
   }
 }
 
+
 M.opts = function()
+  local screen_w = vim.opt.columns:get()
+  local screen_h = vim.opt.lines:get() - vim.opt.cmdheight:get()
+  local window_w = screen_w * 0.5
+  local window_h = screen_h * 0.8
+  local window_w_int = math.floor(window_w)
+  local window_h_int = math.floor(window_h)
+
   return {
     -- proxy = 'https://127.0.0.1:7890'
-    question_header = '**User**',
     separator = '::',
     show_help = false,
     mappings = {
@@ -31,6 +37,12 @@ M.opts = function()
         normal ='<C-r>',
         insert = '<C-r>'
       }
+    },
+    window = {
+      layout = 'float',
+      width = window_w_int,
+      height = window_h_int,
+      border = 'rounded',
     }
   }
 end
